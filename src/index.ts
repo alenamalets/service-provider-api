@@ -1,5 +1,6 @@
 import cors from 'cors';
 import express from 'express';
+import { mainRoutes } from './routes'
 
 const app = express()
 
@@ -12,6 +13,9 @@ const port = parseInt(process.env.PORT, 10) || 9000
 app.use(cors({
     origin: (origin, callback) => callback(null, true),
 }));
+
+// add routes
+mainRoutes(app);
 
 app.listen(port, () => console.log(`App listening on port ${port}`));
 
