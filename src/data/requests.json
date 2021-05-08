@@ -1,0 +1,20 @@
+[
+    { 
+      "name": "Developer", 
+      "skills": ["JavaScript", "PHP", "Python"],
+      "startDate": "25-01-2021",
+      "endDate": "02-02-2021"
+    },
+    {
+       "name": "JS Developer",
+       "skills": ["PHP", "Go", "JavaScript"],
+       "startDate": "20-05-2021",
+       "endDate": "06-09-2021"
+    },
+    {
+        "name": "JS Developer",
+        "skills": ["CSS", "Jest", "JavaScript"],
+        "startDate": "20-04-2021",
+        "endDate": "06-05-2021"
+     }
+  ]
