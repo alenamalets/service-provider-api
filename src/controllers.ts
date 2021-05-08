@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
-import Data from './data/requests.json' 
+import * as Service from './services';
 
 export const getRequests = async (req: Request, res: Response) => {
-    return res.json(Data)
+    const payload = req.body.params;
+    const data = await Service.getRequests(payload)
+    return res.json(data)
 }
