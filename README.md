@@ -1,7 +1,7 @@
 # Service provider API
 
 API for service prodiver app contains an endpoint for generating 5 job offers (requests) based on selected skills. 
-First, I generate 100 random requests. For this I am using the Faker.js library. Each request contains a name, 3 skills, a start date and an end date.
+First, I generate 100 random requests. I am using the Faker.js library for this. Each request contains a name, 3 skills, a start date and an end date.
 Then I filter these requests to find 5 requests matching at least 1 of the chosen skills. To make 2 requests with the same start date, I randomly assign a start date from the first request to one of the remaining four requests.
 
 ### Install dependencies
