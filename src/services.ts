@@ -1,4 +1,4 @@
-import data from './data/requests.json'
+import { generateRandomData } from './data/requests'
 
 /**
  * Get requests based on skills
@@ -7,12 +7,14 @@ import data from './data/requests.json'
 export const getRequests = async (
     skills: string[]
 ) => {
-    const requestsData = data
+    const requestsData = generateRandomData()
+    // console.log('requestsData', requestsData)
     try {
-        const res = requestsData.filter(item => {
+        const filteredRequests = requestsData.filter((item: { skills: string[]; }) => {
             return item.skills.some(r=> skills.includes(r))
         }).slice(0, 5)
-        return res
+        // console.log('filteredRequests', filteredRequests)
+        return filteredRequests
     } catch (error) {
         console.log('error', error)
         return error
