@@ -14,6 +14,8 @@ const skills = [
     'UX design',
     'marketing'
 ]
+
+//generate 100 request objects using faker library that include 3 random skills out of 10 suggested
 export const generateRandomData = () => {
     try {
         const data = _.times(count, () => {

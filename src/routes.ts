@@ -1,8 +1,8 @@
 import { Application } from 'express';
-import { getRequests } from './controllers';
+import { generateRequests } from './controllers';
 
 const mainRoutes = ( app: Application ) => {
-    app.post('/skills', getRequests);
+    app.post('/generate-requests', generateRequests);
 
 };
 
