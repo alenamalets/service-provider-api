@@ -9,7 +9,7 @@ Then I filter these requests to find 5 requests matching at least 1 of the chose
 yarn
 ```
 
-### Run the api
+### Run the api locally
 
 ```
 yarn dev
