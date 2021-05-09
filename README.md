@@ -62,7 +62,7 @@ Response example
   }
 ]
 ```
-# Libriries
+# Libraries
 
 - ### Faker
   Used to generate sample JSON data
